@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre seu currículo para oportunidades de Consultor(a) de Vendas na Oeste Veículos Chevrolet.">
+  <meta name="theme-color" content="#111111">
+  <title>Trabalhe Conosco | Oeste Veículos Chevrolet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="https://www.oestechevrolet.com.br/" target="_blank" rel="noopener" aria-label="Oeste Veículos Chevrolet">
+        <span class="brand-oeste">OESTE</span>
+        <span class="brand-divider"></span>
+        <span class="brand-chevrolet">CHEVROLET</span>
+      </a>
+
+      <a class="header-link" href="https://www.oestechevrolet.com.br/" target="_blank" rel="noopener">
+        Conheça a Oeste
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">TRABALHE CONOSCO</p>
+        <h1>Faça parte do<br><strong>time Oeste.</strong></h1>
+        <p class="hero-text">
+          Estamos em busca de profissionais para integrar nosso time comercial
+          como Consultor(a) de Vendas de Veículos.
+        </p>
+        <a class="hero-cta" href="#candidatura">Quero me candidatar <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-kicker">UMA OPORTUNIDADE PARA VOCÊ</p>
+          <h2>Seu próximo desafio pode começar aqui.</h2>
+        </div>
+        <p class="intro-copy">
+          Se você gosta de pessoas, tem perfil comercial, busca resultados e
+          quer construir uma trajetória no mercado automotivo, envie seu
+          currículo e conte um pouco sobre sua experiência.
+        </p>
+      </div>
+    </section>
+
+    <section class="application-section" id="candidatura">
+      <div class="container">
+        <div class="form-heading">
+          <p class="section-kicker">CANDIDATURA</p>
+          <h2>Queremos conhecer você.</h2>
+          <p>Preencha os dados abaixo. Os campos marcados com <span>*</span> são obrigatórios.</p>
+        </div>
+
+        <form id="application-form" novalidate>
+          <div class="form-card">
+            <div class="form-section">
+              <div class="form-section-title">
+                <span class="number">01</span>
+                <div>
+                  <h3>Seus dados</h3>
+                  <p>Informe seus dados para que nossa equipe possa entrar em contato.</p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="full-name">Nome Completo <span>*</span></label>
+                <input
+                  id="full-name"
+                  type="text"
+                  name="fi-text-nome-completo"
+                  placeholder="Digite seu nome completo"
+                  autocomplete="name"
+                  minlength="3"
+                  required
+                >
+                <small class="field-error" data-error-for="full-name"></small>
+              </div>
+
+              <div class="field">
+                <label for="phone">Telefone para contato <span>*</span></label>
+                <div class="phone-wrap">
+                  <span class="phone-prefix">+55</span>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="fi-text-telefone"
+                    placeholder="(65) 99999-9999"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    maxlength="15"
+                    required
+                  >
+                </div>
+                <small class="hint">Formato: +55 (XX) XXXXX-XXXX</small>
+                <small class="field-error" data-error-for="phone"></small>
+              </div>
+
+              <div class="field">
+                <div class="label-row">
+                  <label>Cidade de Interesse <span>*</span></label>
+                  <span class="selection-count" id="city-count">0/4 selecionadas</span>
+                </div>
+                <p class="hint top-hint">Você pode selecionar até 4 cidades.</p>
+
+                <div class="city-grid">
+                  <label class="city-option">
+                    <input type="checkbox" name="fi-checkbox-cidade-interesse" value="Barra do Garças">
+                    <span class="city-box">
+                      <span class="checkmark">✓</span>
+                      <span>Barra do Garças</span>
+                    </span>
+                  </label>
+
+                  <label class="city-option">
+                    <input type="checkbox" name="fi-checkbox-cidade-interesse" value="Campo Novo do Parecis">
+                    <span class="city-box">
+                      <span class="checkmark">✓</span>
+                      <span>Campo Novo do Parecis</span>
+                    </span>
+                  </label>
+
+                  <label class="city-option">
+                    <input type="checkbox" name="fi-checkbox-cidade-interesse" value="Nova Mutum">
+                    <span class="city-box">
+                      <span class="checkmark">✓</span>
+                      <span>Nova Mutum</span>
+                    </span>
+                  </label>
+
+                  <label class="city-option">
+                    <input type="checkbox" name="fi-checkbox-cidade-interesse" value="Tangará da Serra">
+                    <span class="city-box">
+                      <span class="checkmark">✓</span>
+                      <span>Tangará da Serra</span>
+                    </span>
+                  </label>
+                </div>
+                <small class="field-error" id="city-error"></small>
+              </div>
+
+              <div class="field">
+                <label for="resume">Currículo <span>*</span></label>
+                <div class="upload-area" id="drop-zone" tabindex="0" role="button" aria-controls="resume" aria-label="Selecionar currículo">
+                  <input
+                    id="resume"
+                    type="file"
+                    name="fi-file-curriculo"
+                    accept=".pdf,.jpg,.jpeg,.png,.txt,.doc,.docx"
+                    required
+                  >
+                  <div class="upload-icon" aria-hidden="true">↑</div>
+                  <strong>Arraste seu currículo aqui</strong>
+                  <span>ou <u>clique para selecionar</u></span>
+                  <small>PDF, JPG, PNG, TXT, DOC ou DOCX · até 25 MB</small>
+                </div>
+                <div class="file-selected" id="file-selected" hidden>
+                  <span class="file-icon">DOC</span>
+                  <div>
+                    <strong id="file-name"></strong>
+                    <small id="file-size"></small>
+                  </div>
+                  <button type="button" id="remove-file" aria-label="Remover currículo">×</button>
+                </div>
+                <small class="field-error" id="file-error"></small>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-section-title">
+                <span class="number">02</span>
+                <div>
+                  <h3>Conte sobre você</h3>
+                  <p>Suas respostas nos ajudam a conhecer melhor seu perfil profissional.</p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="experience">Pergunta 1 <span>*</span></label>
+                <div class="question">
+                  Conte brevemente qual a sua experiência com vendas, relatando uma situação que considera a sua venda mais importante e justifique
+                </div>
+                <textarea
+                  id="experience"
+                  name="fi-text-experiencia-vendas"
+                  rows="7"
+                  maxlength="2000"
+                  placeholder="Escreva sua resposta..."
+                  required
+                ></textarea>
+                <div class="textarea-footer">
+                  <small class="field-error" data-error-for="experience"></small>
+                  <small class="counter"><span id="experience-count">0</span>/2000</small>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="motivation">Pergunta 2 <span>*</span></label>
+                <div class="question">
+                  Qual o principal motivo que está se candidatando para ser um(a) Consultor(a) de vendas de Veículos na Oeste Veículos Chevrolet.
+                </div>
+                <textarea
+                  id="motivation"
+                  name="fi-text-motivo-candidatura"
+                  rows="7"
+                  maxlength="2000"
+                  placeholder="Escreva sua resposta..."
+                  required
+                ></textarea>
+                <div class="textarea-footer">
+                  <small class="field-error" data-error-for="motivation"></small>
+                  <small class="counter"><span id="motivation-count">0</span>/2000</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="consent">
+              <span class="consent-mark">✓</span>
+              <p>
+                Ao enviar sua candidatura, você declara que as informações fornecidas
+                são verdadeiras e autoriza a Oeste Veículos Chevrolet a utilizá-las
+                para fins de recrutamento e seleção.
+              </p>
+            </div>
+
+            <div class="submit-area">
+              <button class="submit-button" id="submit-button" type="submit">
+                <span class="button-text">Enviar candidatura</span>
+                <span class="button-loading" hidden>Enviando...</span>
+                <span class="button-arrow">→</span>
+              </button>
+              <p class="secure-note">Seus dados serão enviados com segurança.</p>
+            </div>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container">
+        <p class="section-kicker">OESTE VEÍCULOS CHEVROLET</p>
+        <h2>Seu talento pode<br>acelerar com a gente.</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>OESTE</strong>
+        <span>CHEVROLET</span>
+      </div>
+      <p>© <span id="current-year"></span> Oeste Veículos Chevrolet. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
